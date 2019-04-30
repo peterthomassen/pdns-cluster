@@ -1,0 +1,4 @@
+-- nsmaster database
+CREATE DATABASE pdns;
+CREATE USER 'pdns'@'10.0.1.%' IDENTIFIED BY '${DBMASTER_PASSWORD_pdns}';
+GRANT SELECT, INSERT, UPDATE, DELETE ON pdns.* TO 'pdns'@'10.0.1.%';

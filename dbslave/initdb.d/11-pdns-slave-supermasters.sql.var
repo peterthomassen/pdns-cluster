@@ -1,0 +1,3 @@
+USE pdns;
+
+INSERT INTO supermasters SET ip="10.0.1.4", nameserver="ns1.dns.test", account="";
